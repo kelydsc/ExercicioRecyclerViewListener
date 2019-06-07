@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewDetalheProfessores"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".professores.adapters.RecyclerViewProfessorAdapter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardElevation="5dp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/imagemDetalheProfessores"
+                android:layout_width="match_parent"
+                android:layout_height="269dp"
+                android:scaleType="centerCrop"
+                card_view:srcCompat="@drawable/imagemexerciorecyclerview" />
+
+            <ImageView
+                android:id="@+id/imagemBackDetalheProfessores"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                card_view:srcCompat="@drawable/ic_arrow_back_white_24dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewFotoDetalhe"
+                android:layout_width="367dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="210dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/jessica"
+                card_view:civ_border_color="@android:color/background_light"
+                card_view:civ_border_width="?attr/dialogCornerRadius" />
+
+            <TextView
+                android:id="@+id/textViewNomeDetalhe"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="320dp"
+                android:layout_marginRight="110dp"
+                android:text="Jéssica Milena"
+                android:gravity="center"
+                android:textColor="#47525E"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewCursoDetalhe"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginRight="110dp"
+                android:gravity="center"
+                android:text="Mobile Android"
+                android:textColor="#8492A6"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewConteudoDetalhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="420dp"
+                android:layout_marginRight="16dp"
+                android:text="Conteudo do detalhe dos Professores"
+                android:textColor="#8492A6"
+                android:textSize="14sp"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
